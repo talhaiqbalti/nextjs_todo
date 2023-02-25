@@ -1,0 +1,44 @@
+.main{
+    background-color: #40c06a;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.todo{
+    background-color: white;
+    height: 60vh;
+    width: 100vh;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2%;
+    flex-direction: column;
+    gap: 10px;
+}
+.heading{
+    color: black;
+    font-family: system-ui;
+}
+.item{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.507);
+}
+.itemParent{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 10px;
+}
