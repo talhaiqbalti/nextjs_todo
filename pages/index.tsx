@@ -17,8 +17,9 @@ export default function Home() {
 
   function add(): void {
     setvalue("")
+    ary = todo;
     ary.push(value)
-    settodo([...todo, value])
+    settodo(ary)
   }
 
   return (
@@ -37,7 +38,7 @@ export default function Home() {
               {
                 todo.map((v) => {
                   return (
-                    <div className="item">
+                    <div className="item" key={v}>
                       <Checkbox size="lg" colorScheme='green'>  </Checkbox>
                       <div style={{ width: '100%', paddingLeft: "5px" }}>
                         <Text fontSize='l'>{v}</Text>
